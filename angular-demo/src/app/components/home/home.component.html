@@ -1,3 +1,40 @@
-<app-header></app-header>
-<div>app home page</div>
-<app-footer></app-footer>
+
+<div>
+    <h2>ngFor/ngIf</h2>
+    <ul *ngIf="arr.length>0">
+        <li *ngFor="let item of arr;let key=index">
+            <div *ngIf="key==0" class="red">{{item.name}}- {{item.age}}</div>
+            <div *ngIf="key!==0">{{item.name}}- {{item.age}}</div>
+        </li>
+    </ul>
+    <img [src]="imgSrc" /><br />
+    <h2>ngSwitch</h2>
+    <div [ngSwitch]="orderStatus">
+        <span *ngSwitchCase="1">已经支付</span>
+        <span *ngSwitchCase="2">待支付</span>
+        <span *ngSwitchCase="3">未完成</span>
+        <span *ngSwitchCase="4">订单取消</span>
+    </div>
+    <h2>ngStyle/ngClass</h2>
+    <span [ngClass]="{red:true}">ngClass</span>
+    <span [ngClass]="{blue:flag}">通过flag改变class</span>
+
+    <h2>管道</h2>
+    <div>
+        {{today | date: 'yyyy-MM-dd HH:mm:ss'}}
+    </div>
+    
+    <h2>事件</h2>
+    <button (click)="clickEvent()">执行事件</button>
+
+    <h2>表单事件</h2>
+    <input type="text" (keydown)="keyDown($event)" />
+
+    <h2>双向数据绑定</h2>
+
+    <input type="text" [(ngModel)]="keywords" />
+    <p>{{keywords}}</p>
+    
+</div>
+
+<app-form></app-form>

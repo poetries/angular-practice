@@ -7,25 +7,24 @@ import { NgModule } from '@angular/core';
 // 根路由
 import { AppRoutingModule } from './app-routing.module';
 
+import {FormsModule} from '@angular/forms';
+
 // 跟组件
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NewsComponent } from './components/news/news.component';
 import { HomeComponent } from './components/home/home.component';
+import { FormComponent } from './components/form/form.component';
 
 // AppModule装饰器 告诉angular如何启动和编译应用
 @NgModule({
   declarations: [ // 配置当前项目运行组件
     AppComponent,
-     HeaderComponent,
-     FooterComponent,
-     NewsComponent,
-     HomeComponent
+     HomeComponent,
+     FormComponent
   ],
   imports: [ // 配置当前模块运行依赖的模块
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [], // 配置项目所需服务
 
