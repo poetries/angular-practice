@@ -9,11 +9,19 @@ import { AppRoutingModule } from './app-routing.module';
 
 // 跟组件
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NewsComponent } from './components/news/news.component';
+import { HomeComponent } from './components/home/home.component';
 
 // AppModule装饰器 告诉angular如何启动和编译应用
 @NgModule({
   declarations: [ // 配置当前项目运行组件
-    AppComponent
+    AppComponent,
+     HeaderComponent,
+     FooterComponent,
+     NewsComponent,
+     HomeComponent
   ],
   imports: [ // 配置当前模块运行依赖的模块
     BrowserModule,
