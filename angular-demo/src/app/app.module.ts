@@ -18,6 +18,8 @@ import { SearchComponent } from './components/search/search.component';
 
 // 引入服务
 import { StorageService } from './services/storage.service';
+import { RxjsService } from './services/rxjs.service';
+
 import { DomComponent } from './components/dom/dom.component';
 import { TransitionComponent } from './components/transition/transition.component';
 import { ChildComponent } from './components/child/child.component';
@@ -49,7 +51,7 @@ import { RoutersComponent } from './components/routers/routers.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [StorageService], // 配置项目所需服务
+  providers: [StorageService, RxjsService], // 配置项目所需服务
 
   // 生明模块的根组件
   bootstrap: [AppComponent]
