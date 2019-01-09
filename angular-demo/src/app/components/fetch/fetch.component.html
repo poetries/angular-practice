@@ -1,3 +1,14 @@
 <p>
   fetch works!
 </p>
+
+<button (click)="getData()">get请求数据</button>
+
+<ul>
+  <li *ngFor="let item of list">{{item.title}}</li>
+</ul>
+
+<hr />
+
+
+<button (click)="doLogin()">post提交数据</button>

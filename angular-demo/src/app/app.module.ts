@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import {FormsModule} from '@angular/forms';
 
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+
 // 跟组件
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -49,7 +51,9 @@ import { RoutersComponent } from './components/routers/routers.component';
   imports: [ // 配置当前模块运行依赖的模块
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [StorageService, RxjsService], // 配置项目所需服务
 
