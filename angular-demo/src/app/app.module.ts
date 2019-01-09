@@ -23,6 +23,9 @@ import { TransitionComponent } from './components/transition/transition.componen
 import { ChildComponent } from './components/child/child.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LifecircleComponent } from './components/lifecircle/lifecircle.component';
+import { RxjsComponent } from './components/rxjs/rxjs.component';
+import { FetchComponent } from './components/fetch/fetch.component';
+import { RoutersComponent } from './components/routers/routers.component';
 
 // AppModule装饰器 告诉angular如何启动和编译应用
 @NgModule({
@@ -36,7 +39,10 @@ import { LifecircleComponent } from './components/lifecircle/lifecircle.componen
      TransitionComponent,
      ChildComponent,
      HeaderComponent,
-     LifecircleComponent
+     LifecircleComponent,
+     RxjsComponent,
+     FetchComponent,
+     RoutersComponent
   ],
   imports: [ // 配置当前模块运行依赖的模块
     BrowserModule,
