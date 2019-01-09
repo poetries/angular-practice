@@ -14,6 +14,8 @@ export class TodoComponent implements OnInit {
 
   public todolist: any[] = [];
 
+  public title = 'TODO组件标题'
+
   constructor(public storage: StorageService) {
     console.log(this.storage.get());
    }

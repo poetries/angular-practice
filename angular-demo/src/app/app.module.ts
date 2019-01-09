@@ -19,6 +19,10 @@ import { SearchComponent } from './components/search/search.component';
 // 引入服务
 import { StorageService } from './services/storage.service';
 import { DomComponent } from './components/dom/dom.component';
+import { TransitionComponent } from './components/transition/transition.component';
+import { ChildComponent } from './components/child/child.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LifecircleComponent } from './components/lifecircle/lifecircle.component';
 
 // AppModule装饰器 告诉angular如何启动和编译应用
 @NgModule({
@@ -28,7 +32,11 @@ import { DomComponent } from './components/dom/dom.component';
      FormComponent,
      TodoComponent,
      SearchComponent,
-     DomComponent
+     DomComponent,
+     TransitionComponent,
+     ChildComponent,
+     HeaderComponent,
+     LifecircleComponent
   ],
   imports: [ // 配置当前模块运行依赖的模块
     BrowserModule,

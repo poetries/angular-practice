@@ -1,4 +1,5 @@
-<h2>todoList</h2>
+<app-header [title]="title"></app-header>
+
 <div class="todolist">
     <input class="form_input" type="text" [(ngModel)]="keyword" (keyup)="doAdd($event)" />
     <hr>

@@ -1,3 +1,5 @@
+<app-transition></app-transition>
+<app-header [title]="title" ></app-header>
 
 <div>
     <h2>ngFor/ngIf</h2>
@@ -35,9 +37,27 @@
     <input type="text" [(ngModel)]="keywords" />
     <p>{{keywords}}</p>
     
+   
+    
 </div>
 
 <app-form></app-form>
 <app-todo></app-todo>
 <app-search></app-search>
-<app-dom></app-dom>
+<app-dom #dom></app-dom>
+
+<hr />
+<button (click)="getDom()">获取子组件dom的方法</button>
+
+<hr />
+
+<app-child [msg]="msg" [run]="run" [home]="this" #child (outer)="runParent($event)"></app-child>
+
+<hr />
+
+<hr />
+<button (click)="getchild()">父组件调用子组件方法</button>
+<button (click)="getchildMsg()">父组件获取子组件数据</button>
+<button (click)="runParent()">父组件获取子组件事件广播的数据</button>
+
+<app-lifecircle></app-lifecircle>
