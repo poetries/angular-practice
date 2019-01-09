@@ -9,6 +9,8 @@ export class LifecircleComponent{
 
   public userinfo:string = '';
   public oldUserinfo:string = '';
+  public msg:string;
+  
   constructor() { 
 
     console.log('00构造函数执行了---除了使用简单的值对局部变量进行初始化之外，什么都不应该做')

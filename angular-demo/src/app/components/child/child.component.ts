@@ -8,9 +8,9 @@ import { Component, OnInit , Input, Output, EventEmitter} from '@angular/core';
 export class ChildComponent implements OnInit {
 
   // 接收父组件传来的消息
-  @Input() msg: string;
-  @Input() run: string;
-  @Input() home: string;
+  @Input() msg: any;
+  @Input() run: any;
+  @Input() home: any;
   @Output() private outer = new EventEmitter();
 
   constructor() { }

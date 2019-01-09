@@ -14,7 +14,7 @@ export class SearchComponent implements OnInit {
   public historyList: any[] = [];
 
   constructor(public storage: StorageService) {
-    console.log(this.storage.get());
+    
    }
 
   ngOnInit() {
