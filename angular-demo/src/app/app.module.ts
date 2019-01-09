@@ -30,6 +30,8 @@ import { LifecircleComponent } from './components/lifecircle/lifecircle.componen
 import { RxjsComponent } from './components/rxjs/rxjs.component';
 import { FetchComponent } from './components/fetch/fetch.component';
 import { RoutersComponent } from './components/routers/routers.component';
+import { NewsComponent } from './components/news/news.component';
+import { NewsDetailComponent } from './components/news-detail/news-detail.component';
 
 // AppModule装饰器 告诉angular如何启动和编译应用
 @NgModule({
@@ -46,7 +48,9 @@ import { RoutersComponent } from './components/routers/routers.component';
      LifecircleComponent,
      RxjsComponent,
      FetchComponent,
-     RoutersComponent
+     RoutersComponent,
+     NewsComponent,
+     NewsDetailComponent
   ],
   imports: [ // 配置当前模块运行依赖的模块
     BrowserModule,

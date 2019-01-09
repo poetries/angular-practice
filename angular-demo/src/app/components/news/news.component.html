@@ -1,0 +1,9 @@
+<p>
+  news works!
+</p>
+
+<ul>
+  <li *ngFor="let item of list;let key=index">
+    <a  [routerLink]="['/news-detail', key]">{{key}}----{{item}}</a>
+  </li>
+</ul>
